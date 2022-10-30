@@ -114,13 +114,14 @@ input#new-task {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-li > * {
   vertical-align: middle;
 }
 
-li > input[type="checkbox"] {
+/* li > * {
+  vertical-align: middle;
+} */
+
+.input-checkbox {
   margin: 0 10px;
 }
 
