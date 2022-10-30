@@ -5,26 +5,26 @@ body {
   font-family: Lato, sans-serif;
 }
 
-.footer {
+.header {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
 
-.footer
+.header
 img {
   width: 100%;
 }
 
-.footer
+.header
 .more-inf {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
 
-  .footer { 
+  .header { 
     text-align: center;
   }
 
