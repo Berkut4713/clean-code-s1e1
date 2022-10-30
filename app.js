@@ -104,7 +104,7 @@ var deleteTask=function() {
 }
 
 //Mark task completed
-var taskCompleted=function(){
+var taskCompleted=function() {
   console.log("Complete Task...");
 
   //Append the task list item to the #completed-tasks
@@ -124,7 +124,7 @@ var taskIncomplete=function(){
   bindTaskEvents(listItem,taskCompleted);
 }
 
-var ajaxRequest=function(){
+var ajaxRequest=function() {
   console.log("AJAX Request");
 }
 
