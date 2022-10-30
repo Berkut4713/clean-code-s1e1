@@ -24,6 +24,7 @@ var createNewTaskElement=function(taskString){
   //label.classList.add("li-label");
   //input (text)
   var editInput=document.createElement("input");//text
+  editInput.classList.add("input-text");
   //button.edit
   var editButton=document.createElement("button");//edit button
 
@@ -38,7 +39,7 @@ var createNewTaskElement=function(taskString){
   checkBox.type="checkbox";
   // checkBox.className="input-checkbox";
   editInput.type="text";
-  editInput.className="task";
+  editInput.className="task input-text";
 
   editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
   editButton.className="edit";

@@ -132,8 +132,8 @@ input#new-task {
   width: 226px;
 }
 
-li >  input[type="text"] {
-  width: 226px
+.input-text {
+  width: 226px;
 }
 
 button.delete img {
