@@ -12,7 +12,7 @@ var incompleteTaskHolder=document.getElementById("incomplete-tasks");//ul of #in
 var completedTasksHolder=document.getElementById("completed-tasks");//completed-tasks
 
 //New task list item
-var createNewTaskElement=function(taskString){
+var createNewTaskElement=function(taskString) {
 
   var listItem=document.createElement("li");
   listItem.classList.add("li");
@@ -57,28 +57,23 @@ var createNewTaskElement=function(taskString){
   return listItem;
 }
 
-var addTask=function(){
+var addTask=function() {
   console.log("Add Task...");
   //Create a new list item with the text from the #new-task:
   if (!taskInput.value) return;
-  var listItem=createNewTaskElement(taskInput.value);
-
-  //Append listItem to incompleteTaskHolder
-  incompleteTaskHolder.appendChild(listItem);
-  bindTaskEvents(listItem, taskCompleted);
-
+    var listItem=createNewTaskElement(taskInput.value);
+    //Append listItem to incompleteTaskHolder
+    incompleteTaskHolder.appendChild(listItem);
+    bindTaskEvents(listItem, taskCompleted);
   taskInput.value="";
-
 }
 
 //Edit an existing task.
 
-var editTask=function(){
+var editTask=function() {
   console.log('Edit Task...');
   console.log('Change "edit" to "save"');
-
   var listItem=this.parentNode;
-
   var editInput=listItem.querySelector("input[type=text]");
   var label=listItem.querySelector("label");
   var editBtn=listItem.querySelector(".edit");
@@ -100,14 +95,12 @@ var editTask=function(){
 };
 
 //Delete task.
-var deleteTask=function(){
+var deleteTask=function() {
   console.log("Delete Task...");
-
   var listItem=this.parentNode;
   var ul=listItem.parentNode;
   //Remove the parent list item from the ul.
   ul.removeChild(listItem);
-
 }
 
 //Mark task completed
